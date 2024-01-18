@@ -3,7 +3,7 @@ import json
 import argparse
 
 def main(pin):
-    res = requests.get(f"https://anticheat.site/api/pins/{pin}")
+    res = requests.get(f"https://anticheat.ac/api/pins/{pin}")
 
     if res.status_code == 200:
         data = json.loads(res.text)
